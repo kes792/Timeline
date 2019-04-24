@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3826148B2253982900F4A483 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3826148A2253982900F4A483 /* HeaderView.m */; };
+		38362D512269C20000132419 /* MImageListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38362D502269C20000132419 /* MImageListView.m */; };
+		383804B1225C99A10006D476 /* MAPIAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 383804B0225C99A10006D476 /* MAPIAdapter.m */; };
+		383804B7225C99AA0006D476 /* MUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 383804B6225C99AA0006D476 /* MUserManager.m */; };
+		383804B9225DF9390006D476 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 383804B8225DF9390006D476 /* Images.xcassets */; };
+		3839470E225F2480000B297B /* MMomentDatamanager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3839470D225F2480000B297B /* MMomentDatamanager.m */; };
+		38394711225F3ECD000B297B /* MMoment.m in Sources */ = {isa = PBXBuildFile; fileRef = 38394710225F3ECD000B297B /* MMoment.m */; };
+		38394714225F682F000B297B /* MUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 38394713225F682F000B297B /* MUser.m */; };
+		38394717226091C1000B297B /* MomentCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38394716226091C1000B297B /* MomentCellTableViewCell.m */; };
+		3839471A22609263000B297B /* MomentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3839471922609263000B297B /* MomentCell.m */; };
 		38D52307224F8AC5004B7558 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D52306224F8AC5004B7558 /* AppDelegate.m */; };
 		38D5230A224F8AC5004B7558 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D52309224F8AC5004B7558 /* ViewController.m */; };
 		38D5230D224F8AC5004B7558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38D5230B224F8AC5004B7558 /* Main.storyboard */; };
@@ -15,6 +25,7 @@
 		38D52315224F8AC9004B7558 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D52314224F8AC9004B7558 /* main.m */; };
 		38D5231F224F8ACA004B7558 /* TimelineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D5231E224F8ACA004B7558 /* TimelineTests.m */; };
 		38D5232A224F8ACA004B7558 /* TimelineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D52329224F8ACA004B7558 /* TimelineUITests.m */; };
+		9051502E1EB562EB6CC15E31 /* libPods-Timeline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92AF9EEC04724ADA2B84C7A3 /* libPods-Timeline.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +46,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		382614892253982900F4A483 /* HeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HeaderView.h; path = /Users/jim/Desktop/Timeline/Timeline/HeaderView.h; sourceTree = "<absolute>"; };
+		3826148A2253982900F4A483 /* HeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HeaderView.m; path = ../HeaderView.m; sourceTree = "<group>"; };
+		38362D4F2269C20000132419 /* MImageListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MImageListView.h; sourceTree = "<group>"; };
+		38362D502269C20000132419 /* MImageListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MImageListView.m; sourceTree = "<group>"; };
+		383804AF225C99A10006D476 /* MAPIAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPIAdapter.h; sourceTree = "<group>"; };
+		383804B0225C99A10006D476 /* MAPIAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAPIAdapter.m; sourceTree = "<group>"; };
+		383804B5225C99AA0006D476 /* MUserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MUserManager.h; path = /Users/jim/Desktop/Timeline/Timeline/MUserManager.h; sourceTree = "<absolute>"; };
+		383804B6225C99AA0006D476 /* MUserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MUserManager.m; path = /Users/jim/Desktop/Timeline/Timeline/MUserManager.m; sourceTree = "<absolute>"; };
+		383804B8225DF9390006D476 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3839470C225F2480000B297B /* MMomentDatamanager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMomentDatamanager.h; sourceTree = "<group>"; };
+		3839470D225F2480000B297B /* MMomentDatamanager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMomentDatamanager.m; sourceTree = "<group>"; };
+		3839470F225F3ECD000B297B /* MMoment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMoment.h; sourceTree = "<group>"; };
+		38394710225F3ECD000B297B /* MMoment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMoment.m; sourceTree = "<group>"; };
+		38394712225F682F000B297B /* MUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUser.h; sourceTree = "<group>"; };
+		38394713225F682F000B297B /* MUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUser.m; sourceTree = "<group>"; };
+		38394715226091C1000B297B /* MomentCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MomentCellTableViewCell.h; sourceTree = "<group>"; };
+		38394716226091C1000B297B /* MomentCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MomentCellTableViewCell.m; sourceTree = "<group>"; };
+		3839471822609263000B297B /* MomentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MomentCell.h; sourceTree = "<group>"; };
+		3839471922609263000B297B /* MomentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MomentCell.m; sourceTree = "<group>"; };
 		38D52302224F8AC5004B7558 /* Timeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D52305224F8AC5004B7558 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		38D52306224F8AC5004B7558 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +81,9 @@
 		38D52325224F8ACA004B7558 /* TimelineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimelineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D52329224F8ACA004B7558 /* TimelineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimelineUITests.m; sourceTree = "<group>"; };
 		38D5232B224F8ACA004B7558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80BC2871A24B9A5C55A9D55A /* Pods-Timeline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timeline.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Timeline/Pods-Timeline.debug.xcconfig"; sourceTree = "<group>"; };
+		92AF9EEC04724ADA2B84C7A3 /* libPods-Timeline.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Timeline.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98CDAEE63FB3E1EAB80E229A /* Pods-Timeline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timeline.release.xcconfig"; path = "Pods/Target Support Files/Pods-Timeline/Pods-Timeline.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9051502E1EB562EB6CC15E31 /* libPods-Timeline.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +119,8 @@
 				38D5231D224F8ACA004B7558 /* TimelineTests */,
 				38D52328224F8ACA004B7558 /* TimelineUITests */,
 				38D52303224F8AC5004B7558 /* Products */,
+				590DD6E80D78A3914D56A57E /* Pods */,
+				3DE6CC5F5FD81ED529B398C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +137,26 @@
 		38D52304224F8AC5004B7558 /* Timeline */ = {
 			isa = PBXGroup;
 			children = (
+				38394712225F682F000B297B /* MUser.h */,
+				38394713225F682F000B297B /* MUser.m */,
+				3839470F225F3ECD000B297B /* MMoment.h */,
+				38394710225F3ECD000B297B /* MMoment.m */,
+				383804B5225C99AA0006D476 /* MUserManager.h */,
+				383804B6225C99AA0006D476 /* MUserManager.m */,
+				3839470C225F2480000B297B /* MMomentDatamanager.h */,
+				3839470D225F2480000B297B /* MMomentDatamanager.m */,
+				383804AF225C99A10006D476 /* MAPIAdapter.h */,
+				383804B0225C99A10006D476 /* MAPIAdapter.m */,
 				38D52305224F8AC5004B7558 /* AppDelegate.h */,
 				38D52306224F8AC5004B7558 /* AppDelegate.m */,
+				382614892253982900F4A483 /* HeaderView.h */,
+				3826148A2253982900F4A483 /* HeaderView.m */,
+				38394715226091C1000B297B /* MomentCellTableViewCell.h */,
+				38394716226091C1000B297B /* MomentCellTableViewCell.m */,
+				3839471822609263000B297B /* MomentCell.h */,
+				3839471922609263000B297B /* MomentCell.m */,
+				38362D4F2269C20000132419 /* MImageListView.h */,
+				38362D502269C20000132419 /* MImageListView.m */,
 				38D52308224F8AC5004B7558 /* ViewController.h */,
 				38D52309224F8AC5004B7558 /* ViewController.m */,
 				38D5230B224F8AC5004B7558 /* Main.storyboard */,
@@ -110,6 +164,7 @@
 				38D52310224F8AC9004B7558 /* LaunchScreen.storyboard */,
 				38D52313224F8AC9004B7558 /* Info.plist */,
 				38D52314224F8AC9004B7558 /* main.m */,
+				383804B8225DF9390006D476 /* Images.xcassets */,
 			);
 			path = Timeline;
 			sourceTree = "<group>";
@@ -132,6 +187,23 @@
 			path = TimelineUITests;
 			sourceTree = "<group>";
 		};
+		3DE6CC5F5FD81ED529B398C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92AF9EEC04724ADA2B84C7A3 /* libPods-Timeline.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		590DD6E80D78A3914D56A57E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80BC2871A24B9A5C55A9D55A /* Pods-Timeline.debug.xcconfig */,
+				98CDAEE63FB3E1EAB80E229A /* Pods-Timeline.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38D5232E224F8ACA004B7558 /* Build configuration list for PBXNativeTarget "Timeline" */;
 			buildPhases = (
+				4287378B6C48A02777FE8608 /* [CP] Check Pods Manifest.lock */,
 				38D522FE224F8AC5004B7558 /* Sources */,
 				38D522FF224F8AC5004B7558 /* Frameworks */,
 				38D52300224F8AC5004B7558 /* Resources */,
+				7981E2DC8BAE43F4E91D5AD8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38D52312224F8AC9004B7558 /* LaunchScreen.storyboard in Resources */,
+				383804B9225DF9390006D476 /* Images.xcassets in Resources */,
 				38D5230F224F8AC9004B7558 /* Assets.xcassets in Resources */,
 				38D5230D224F8AC5004B7558 /* Main.storyboard in Resources */,
 			);
@@ -257,14 +332,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4287378B6C48A02777FE8608 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Timeline-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7981E2DC8BAE43F4E91D5AD8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Timeline/Pods-Timeline-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Timeline/Pods-Timeline-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		38D522FE224F8AC5004B7558 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				38D5230A224F8AC5004B7558 /* ViewController.m in Sources */,
+				3839470E225F2480000B297B /* MMomentDatamanager.m in Sources */,
+				38394714225F682F000B297B /* MUser.m in Sources */,
+				38362D512269C20000132419 /* MImageListView.m in Sources */,
+				38394717226091C1000B297B /* MomentCellTableViewCell.m in Sources */,
+				3826148B2253982900F4A483 /* HeaderView.m in Sources */,
 				38D52315224F8AC9004B7558 /* main.m in Sources */,
+				383804B7225C99AA0006D476 /* MUserManager.m in Sources */,
 				38D52307224F8AC5004B7558 /* AppDelegate.m in Sources */,
+				383804B1225C99A10006D476 /* MAPIAdapter.m in Sources */,
+				38394711225F3ECD000B297B /* MMoment.m in Sources */,
+				3839471A22609263000B297B /* MomentCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,11 +556,13 @@
 		};
 		38D5232F224F8ACA004B7558 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80BC2871A24B9A5C55A9D55A /* Pods-Timeline.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NWK9K7HFX6;
 				INFOPLIST_FILE = Timeline/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,11 +575,13 @@
 		};
 		38D52330224F8ACA004B7558 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98CDAEE63FB3E1EAB80E229A /* Pods-Timeline.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NWK9K7HFX6;
 				INFOPLIST_FILE = Timeline/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

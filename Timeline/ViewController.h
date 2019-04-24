@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HeaderView.h"
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) NSMutableArray * momentList;  
+@property (nonatomic, strong) UITableView * tableView;
 
 @end
 
