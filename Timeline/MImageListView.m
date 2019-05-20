@@ -8,6 +8,7 @@
 
 #import "MImageListView.h"
 #import "UIImageView+WebCache.h"
+#import "Masonry.h"
 
 @implementation MImageListView
 
@@ -16,34 +17,214 @@
     self = [super initWithFrame:frame];
     if (self)
     {
-        _imageStringArray = [[NSArray alloc] initWithArray:imageStringArray];
-        NSLog(@"_imageStringArray = %@",_imageStringArray);
-        [self setBackgroundColor:[UIColor blackColor]];
-        /*
-        for(int i = 0; i < [_imageStringArray count]; i++)
+        //NSLog(@"_imageStringArray = %d", (int)[imageStringArray count]);
+        [self setBackgroundColor:[UIColor clearColor]];
+        _imageViewArray = [[NSMutableArray alloc] init];
+        
+        for(int i = 0; i < [imageStringArray count]; i++)
         {
             UIImageView *photoImgae =  [UIImageView new];
-            NSURL *url = [NSURL URLWithString:[_imageStringArray objectAtIndex:i]];
+            NSDictionary *dic = [imageStringArray objectAtIndex:i];
+            NSURL *url = [NSURL URLWithString:[dic objectForKey:@"url"]];
+            //NSLog(@"url = %@",url);
             [photoImgae sd_setImageWithURL:url
-                                placeholderImage:nil];
+                          placeholderImage:[UIImage imageNamed:@"moment_cover.png"]
+                                   options:SDWebImageAllowInvalidSSLCertificates];
+           
             photoImgae.contentMode = UIViewContentModeScaleAspectFill;
             photoImgae.clipsToBounds = YES;
             photoImgae.userInteractionEnabled = YES;
             [photoImgae setTag:1000+ i];
             [self addSubview:photoImgae];
+            [photoImgae setBackgroundColor:[UIColor lightGrayColor]];
+
+            [_imageViewArray addObject:photoImgae];
         }
-        */
-        if([_imageStringArray count] == 1)
+        
+        if([imageStringArray count] == 1)
         {
-            
+            UIImageView *photoImgae = (UIImageView *)[_imageViewArray objectAtIndex:0];
+            photoImgae.contentMode = UIViewContentModeTopLeft;
+            [photoImgae mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.width.mas_equalTo(self.mas_width).multipliedBy(0.8);
+                make.height.mas_equalTo(self.mas_height).multipliedBy(0.8);
+                make.left.mas_equalTo(self.mas_left);
+                make.top.mas_equalTo(self.mas_top);
+            }];
         }
-        else if([_imageStringArray count] == 4)
+        else if([imageStringArray count] == 2)
         {
-            
+            for (UIImageView *photoImgae in _imageViewArray)
+            {
+                switch (photoImgae.tag) {
+                    case 1000:
+                    {
+                        [photoImgae mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.width.mas_equalTo(self.mas_width).multipliedBy(0.5);
+                            make.height.mas_equalTo(self.mas_height);
+                            make.left.mas_equalTo(self.mas_left);
+                            make.centerY.mas_equalTo(self.mas_centerY);
+                        }];
+                    }
+                        break;
+                    case 1001:
+                    {
+                        [photoImgae mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.width.mas_equalTo(self.mas_width).multipliedBy(0.5);
+                            make.height.mas_equalTo(self.mas_height);
+                            make.right.mas_equalTo(self.mas_right);
+                            make.centerY.mas_equalTo(self.mas_centerY);
+                        }];
+                    }
+                        break;
+                }
+            }
         }
-        else
+        else if([imageStringArray count] == 4)
         {
-            
+            for (UIImageView *photoImgae in _imageViewArray)
+            {
+                switch (photoImgae.tag) {
+                    case 1000:
+                    {
+                        [photoImgae mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.width.mas_equalTo(self.mas_width).multipliedBy(0.5);
+                            make.height.mas_equalTo(self.mas_height).multipliedBy(0.5);
+                            make.left.mas_equalTo(self.mas_left);
+                            make.top.mas_equalTo(self.mas_top);
+                        }];
+                    }
+                        break;
+                    case 1001:
+                    {
+                        [photoImgae mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.width.mas_equalTo(self.mas_width).multipliedBy(0.5);
+                            make.height.mas_equalTo(self.mas_height).multipliedBy(0.5);
+                            make.right.mas_equalTo(self.mas_right);
+                            make.top.mas_equalTo(self.mas_top);
+                        }];
+                    }
+                        break;
+                    case 1002:
+                    {
+                        [photoImgae mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.width.mas_equalTo(self.mas_width).multipliedBy(0.5);
+                            make.height.mas_equalTo(self.mas_height).multipliedBy(0.5);
+                            make.left.mas_equalTo(self.mas_left);
+                            make.bottom.mas_equalTo(self.mas_bottom);
+                        }];
+                    }
+                        break;
+                    case 1003:
+                    {
+                        [photoImgae mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.width.mas_equalTo(self.mas_width).multipliedBy(0.5);
+                            make.height.mas_equalTo(self.mas_height).multipliedBy(0.5);
+                            make.right.mas_equalTo(self.mas_right);
+                            make.bottom.mas_equalTo(self.mas_bottom);
+                        }];
+                    }
+                        break;
+                }
+            }
+        }
+        else 
+        {
+            for (UIImageView *photoImgae in _imageViewArray)
+            {
+                switch (photoImgae.tag) {
+                    case 1000:
+                    {
+                        [photoImgae mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.width.mas_equalTo(self.mas_width).multipliedBy(0.3);
+                            make.height.mas_equalTo(self.mas_height);
+                            make.left.mas_equalTo(self.mas_left);
+                            make.top.mas_equalTo(self.mas_top);
+                        }];
+                    }
+                        break;
+                    case 1001:
+                    {
+                        [photoImgae mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.width.mas_equalTo(self.mas_width).multipliedBy(0.3);
+                            make.height.mas_equalTo(self.mas_height);
+                            make.centerX.mas_equalTo(self.mas_centerX);
+                            make.top.mas_equalTo(self.mas_top);
+                        }];
+                    }
+                        break;
+                    case 1002:
+                    {
+                        [photoImgae mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.width.mas_equalTo(self.mas_width).multipliedBy(0.3);
+                            make.height.mas_equalTo(self.mas_height);
+                            make.right.mas_equalTo(self.mas_right);
+                            make.top.mas_equalTo(self.mas_top);
+                        }];
+                    }
+                        break;
+                    case 1003:
+                    {
+                        [photoImgae mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.width.mas_equalTo(self.mas_width).multipliedBy(0.3);
+                            make.height.mas_equalTo(self.mas_height);
+                            make.left.mas_equalTo(self.mas_left);
+                            make.centerY.mas_equalTo(self.mas_centerY);
+                        }];
+                    }
+                        break;
+                    case 1004:
+                    {
+                        [photoImgae mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.width.mas_equalTo(self.mas_width).multipliedBy(0.3);
+                            make.height.mas_equalTo(self.mas_height);
+                            make.centerX.mas_equalTo(self.mas_centerX);
+                            make.centerY.mas_equalTo(self.mas_centerY);
+                        }];
+                    }
+                        break;
+                    case 1005:
+                    {
+                        [photoImgae mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.width.mas_equalTo(self.mas_width).multipliedBy(0.3);
+                            make.height.mas_equalTo(self.mas_height);
+                            make.right.mas_equalTo(self.mas_right);
+                            make.centerY.mas_equalTo(self.mas_centerY);
+                        }];
+                    }
+                        break;
+                    case 1006:
+                    {
+                        [photoImgae mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.width.mas_equalTo(self.mas_width).multipliedBy(0.3);
+                            make.height.mas_equalTo(self.mas_height);
+                            make.left.mas_equalTo(self.mas_left);
+                            make.bottom.mas_equalTo(self.mas_bottom);
+                        }];
+                    }
+                        break;
+                    case 1007:
+                    {
+                        [photoImgae mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.width.mas_equalTo(self.mas_width).multipliedBy(0.3);
+                            make.height.mas_equalTo(self.mas_height);
+                            make.centerX.mas_equalTo(self.mas_centerX);
+                            make.bottom.mas_equalTo(self.mas_bottom);
+                        }];
+                    }
+                        break;
+                    case 1008:
+                    {
+                        [photoImgae mas_makeConstraints:^(MASConstraintMaker *make) {
+                            make.width.mas_equalTo(self.mas_width).multipliedBy(0.3);
+                            make.height.mas_equalTo(self.mas_height);
+                            make.right.mas_equalTo(self.mas_right);
+                            make.bottom.mas_equalTo(self.mas_bottom);
+                        }];
+                    }
+                        break;
+                }
+            }
         };
         
     }

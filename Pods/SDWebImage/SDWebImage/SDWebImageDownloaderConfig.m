@@ -24,7 +24,7 @@ static SDWebImageDownloaderConfig * _defaultDownloaderConfig;
     self = [super init];
     if (self) {
         _maxConcurrentDownloads = 6;
-        _downloadTimeout = 15.0;
+        _downloadTimeout = 100.0;
         _executionOrder = SDWebImageDownloaderFIFOExecutionOrder;
     }
     return self;

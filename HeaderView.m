@@ -30,7 +30,7 @@
 -(void) configUILayout
 {
     backgroundImageView = [UIImageView new];
-    backgroundImageView.image = [UIImage imageNamed:@"moment_cover"];
+    backgroundImageView.image = [UIImage imageNamed:@"moment_cover.png"];
     backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
     [self addSubview:backgroundImageView];
     [backgroundImageView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -51,7 +51,6 @@
                                                              self.frame.size.height-80,
                                                              80,
                                                              80)];
-    iconView.image = [UIImage imageNamed:@"WWDCICON"];
     [self addSubview:iconView];
     
     nameLabel = [[UILabel alloc] initWithFrame: CGRectMake(SCREEN_WIDTH-220,

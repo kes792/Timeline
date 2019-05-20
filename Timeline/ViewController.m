@@ -5,6 +5,7 @@
 //  Created by Jim on 2019/3/30.
 //  Copyright © 2019 Jim. All rights reserved.
 //
+#import "UIImageView+WebCache.h"
 
 #import "ViewController.h"
 #import <MJRefresh.h>
@@ -29,6 +30,10 @@
 
 - (void)viewDidLoad
 {
+    SDWebImageManager *manager  = [SDWebImageManager sharedManager];
+    //manager.
+    
+
     [super viewDidLoad];
     //
     [self configData];
@@ -100,7 +105,7 @@
         [self.tableView reloadData];
         [self.tableView.mj_footer endRefreshing];
     }];
-    [footer.arrowView setImage:[UIImage imageNamed:@"refresh_pull"]];
+    [footer.arrowView setImage:[UIImage imageNamed:@"refresh_pull.png"]];
     [footer setTitle:@"上拉加载更多" forState:MJRefreshStateIdle];
     [footer setTitle:@"松手加载更多" forState:MJRefreshStatePulling];
     [footer setTitle:@"正在加载"     forState:MJRefreshStateRefreshing];
@@ -134,7 +139,7 @@
     
     switch (operateType)
     {
-        case 0:
+        case 0:// 全文/ 折疊
         {
             NSIndexPath * indexPath = [self.tableView indexPathForCell:cell];
             if (indexPath) {
@@ -146,6 +151,22 @@
             }
             break;
         }
+        case 1:// menu: like|comment 收起其他的 menuView
+        {
+            /*
+            NSIndexPath * indexPath = [self.tableView indexPathForCell:cell];
+            if (indexPath) {
+                [UIView performWithoutAnimation:^{
+                    [self.tableView reloadRowsAtIndexPaths:@[indexPath]
+                                          withRowAnimation:UITableViewRowAnimationAutomatic];
+                }];
+                //[self.tableView reloadData];
+            }
+            */
+            
+            break;
+        }
+            break;
     }
 }
 
@@ -186,6 +207,7 @@
     
     cell.moment = (MMoment *)[self.momentList objectAtIndex:[indexPath row]];
     cell.delegate = self;
+    //[cell.moreButton addTarget:self action:(nonnull SEL) forControlEvents:<#(UIControlEvents)#>
 
     return cell;
 }
@@ -230,7 +252,6 @@
     UIImage *alphaImage = [self imageWithColor:alphaColor];
     [self.navigationController.navigationBar setBackgroundImage:alphaImage
                                                   forBarMetrics:UIBarMetricsDefault];
-    
     //NSLog(@"contentOffset.y=%4f, offset=%4f, alpha = %4f",scrollView.contentOffset.y, offset , alpha);
 }
 

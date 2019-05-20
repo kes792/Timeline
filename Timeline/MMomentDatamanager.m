@@ -47,7 +47,7 @@ static MMomentDatamanager *momentDatamanager = nil;
              NSArray *resultArray = (NSArray *)resultObject;
              for(int i=0; i < [resultArray count]; i++)
              {
-                 NSLog(@"resultObject = %@", resultObject);
+                 //NSLog(@"resultObject = %@", resultObject);
                  
                  MMoment *moment = [[MMoment alloc] init: [resultArray objectAtIndex:i]];
                  if(moment != NULL)

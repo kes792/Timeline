@@ -16,7 +16,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString        *contentString;
 @property (nonatomic, strong)MUser          *senderUser;
 @property (nonatomic, strong)MUser          *commentUser;
-@property (nonatomic, copy) NSString        *commentContent;
 @property (nonatomic, copy) NSArray         *imageURLArrray;
 @property (nonatomic, copy) NSMutableArray  *commentsArray;
 @property (nonatomic, assign) BOOL           isFullText;

@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MImageListView : UIView
 
-@property (nonatomic,strong) NSArray * imageStringArray;
+@property (nonatomic,strong) NSMutableArray * imageViewArray;
 
 
 - (instancetype)initWithFrame:(CGRect)frame :(NSArray *)imageStringArray;

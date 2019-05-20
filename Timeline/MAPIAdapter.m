@@ -51,7 +51,7 @@ static MAPIAdapter *myAPIdapter = nil;
             resultObject = [NSJSONSerialization JSONObjectWithData:data
                                                            options:0
                                                              error:&error];
-            NSLog(@"Load HTML from [%@]", resultObject);
+            //NSLog(@"Load HTML from [%@]", resultObject);
         }
         else
         {

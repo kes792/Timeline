@@ -43,7 +43,7 @@ static MUserManager *myUserManager = nil;
      {
          if (error == nil && resultObject != nil)
          {
-             NSLog(@"resultObject = %@", resultObject);
+             //NSLog(@"resultObject = %@", resultObject);
              NSDictionary *dictionary = (NSDictionary *)resultObject;
              weakSelf.adminUser = [[MUser alloc] init:dictionary];
          }

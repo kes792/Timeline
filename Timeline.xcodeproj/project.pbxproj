@@ -17,10 +17,11 @@
 		38394714225F682F000B297B /* MUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 38394713225F682F000B297B /* MUser.m */; };
 		38394717226091C1000B297B /* MomentCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38394716226091C1000B297B /* MomentCellTableViewCell.m */; };
 		3839471A22609263000B297B /* MomentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3839471922609263000B297B /* MomentCell.m */; };
+		3878962F227093F5002FC0D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3878962E227093F5002FC0D9 /* Assets.xcassets */; };
+		387896322271B4B0002FC0D9 /* MMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 387896312271B4B0002FC0D9 /* MMenuView.m */; };
 		38D52307224F8AC5004B7558 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D52306224F8AC5004B7558 /* AppDelegate.m */; };
 		38D5230A224F8AC5004B7558 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D52309224F8AC5004B7558 /* ViewController.m */; };
 		38D5230D224F8AC5004B7558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38D5230B224F8AC5004B7558 /* Main.storyboard */; };
-		38D5230F224F8AC9004B7558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38D5230E224F8AC9004B7558 /* Assets.xcassets */; };
 		38D52312224F8AC9004B7558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38D52310224F8AC9004B7558 /* LaunchScreen.storyboard */; };
 		38D52315224F8AC9004B7558 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D52314224F8AC9004B7558 /* main.m */; };
 		38D5231F224F8ACA004B7558 /* TimelineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D5231E224F8ACA004B7558 /* TimelineTests.m */; };
@@ -65,13 +66,15 @@
 		38394716226091C1000B297B /* MomentCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MomentCellTableViewCell.m; sourceTree = "<group>"; };
 		3839471822609263000B297B /* MomentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MomentCell.h; sourceTree = "<group>"; };
 		3839471922609263000B297B /* MomentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MomentCell.m; sourceTree = "<group>"; };
+		3878962E227093F5002FC0D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		387896302271B4B0002FC0D9 /* MMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMenuView.h; sourceTree = "<group>"; };
+		387896312271B4B0002FC0D9 /* MMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMenuView.m; sourceTree = "<group>"; };
 		38D52302224F8AC5004B7558 /* Timeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D52305224F8AC5004B7558 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		38D52306224F8AC5004B7558 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		38D52308224F8AC5004B7558 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		38D52309224F8AC5004B7558 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		38D5230C224F8AC5004B7558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		38D5230E224F8AC9004B7558 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38D52311224F8AC9004B7558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38D52313224F8AC9004B7558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38D52314224F8AC9004B7558 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -155,15 +158,17 @@
 				38394716226091C1000B297B /* MomentCellTableViewCell.m */,
 				3839471822609263000B297B /* MomentCell.h */,
 				3839471922609263000B297B /* MomentCell.m */,
+				387896302271B4B0002FC0D9 /* MMenuView.h */,
+				387896312271B4B0002FC0D9 /* MMenuView.m */,
 				38362D4F2269C20000132419 /* MImageListView.h */,
 				38362D502269C20000132419 /* MImageListView.m */,
 				38D52308224F8AC5004B7558 /* ViewController.h */,
 				38D52309224F8AC5004B7558 /* ViewController.m */,
 				38D5230B224F8AC5004B7558 /* Main.storyboard */,
-				38D5230E224F8AC9004B7558 /* Assets.xcassets */,
 				38D52310224F8AC9004B7558 /* LaunchScreen.storyboard */,
 				38D52313224F8AC9004B7558 /* Info.plist */,
 				38D52314224F8AC9004B7558 /* main.m */,
+				3878962E227093F5002FC0D9 /* Assets.xcassets */,
 				383804B8225DF9390006D476 /* Images.xcassets */,
 			);
 			path = Timeline;
@@ -311,7 +316,7 @@
 			files = (
 				38D52312224F8AC9004B7558 /* LaunchScreen.storyboard in Resources */,
 				383804B9225DF9390006D476 /* Images.xcassets in Resources */,
-				38D5230F224F8AC9004B7558 /* Assets.xcassets in Resources */,
+				3878962F227093F5002FC0D9 /* Assets.xcassets in Resources */,
 				38D5230D224F8AC5004B7558 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +386,7 @@
 				38394714225F682F000B297B /* MUser.m in Sources */,
 				38362D512269C20000132419 /* MImageListView.m in Sources */,
 				38394717226091C1000B297B /* MomentCellTableViewCell.m in Sources */,
+				387896322271B4B0002FC0D9 /* MMenuView.m in Sources */,
 				3826148B2253982900F4A483 /* HeaderView.m in Sources */,
 				38D52315224F8AC9004B7558 /* main.m in Sources */,
 				383804B7225C99AA0006D476 /* MUserManager.m in Sources */,

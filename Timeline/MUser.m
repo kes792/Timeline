@@ -12,12 +12,7 @@
 
 - (instancetype)init:(NSDictionary *)dir
 {
-    /*
-     @property (nonatomic, copy) NSString * userName;
-     @property (nonatomic, copy) NSString * nickName;
-     @property (nonatomic, copy) NSString * avatarURLString;
-     @property (nonatomic, copy) NSString * profileImageURLString;
-     */
+
     self = [super init];
     if (self) {
         
